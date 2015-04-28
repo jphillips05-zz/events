@@ -33,7 +33,7 @@ module.exports = function(app) {
 		event.set('EventName', e.name);
 		event.set('EventOrganizer', e.organizer);
 		event.set('EventPrice', e.price.length > 0 && isFinite(e.price) ? parseInt(e.price) : 0);
-		event.set('EventState', e.state.name);
+		event.set('EventState', e.state.abbreviation);
 		event.set('EventTickets', e.tickets);
 		event.set('EventWebsite', e.website);
 

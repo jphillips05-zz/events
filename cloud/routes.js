@@ -42,7 +42,7 @@ module.exports = function(app) {
 				res.res.json({success: true});
 			}, 
 			function(error){
-				res.res.json({success: false});
+				res.res.json({error: error});
 			});
 	});
 };

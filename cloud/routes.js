@@ -17,6 +17,8 @@ module.exports = function(app) {
 	});
 
 	app.post('/api/event', function(res, req){
+		
+    parse.initialize(process.env.applicationId, process.env.javascriptId);
 
 		var e = req.req.body;
 		var Events = parse.Object.extend('events');

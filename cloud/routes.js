@@ -1,8 +1,7 @@
 module.exports = function(app) {
 
-	var path				= require('path');
-	var parse 				= require('parse').Parse;
-	var parseConfig		 	= require('../config/parse.js');
+	var path				   = require('path');
+	var parse 				 = require('parse').Parse;
 
 	app.get('/public/states.js', function(req, res){
 		res.sendFile('states.js', { root: path.join(__dirname, '../public') });	

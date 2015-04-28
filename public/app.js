@@ -41,6 +41,7 @@ angular.module('events', [
 			.success(function(data, status){
 				if(data.success) {
 					window.scrollTo(0,0);
+					$scope.init();
 				}
 			})
 			.error(function(data, status){
